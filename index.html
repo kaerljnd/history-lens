@@ -1,0 +1,1018 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#183448">
+<meta name="description" content="12个匿名历史情境，练习证据判断、多方权衡、方案设计与根据新证据更新观点。免费、无账号、无服务器。">
+<title>历史透镜 · 匿名情境判断练习</title>
+<style>
+:root{--navy:#183448;--navy2:#25485b;--ink:#24313a;--muted:#63747b;--line:#dfe5e1;--paper:#f7f7f2;--card:#ffffff;--accent:#ad7042;--tint:#f3f0e8;--positive:#2d716a;--red:#a14343;--radius:18px;--fs:16px}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei","Noto Sans CJK SC",sans-serif;font-size:var(--fs);line-height:1.7} body.large{--fs:19px}
+a{color:var(--navy);text-underline-offset:3px} button,input,textarea{font:inherit} button{cursor:pointer} button:disabled{cursor:not-allowed;opacity:.52}
+.wrap{max-width:960px;margin:auto;padding:0 22px} header{background:var(--navy);color:#fff} header .top{display:flex;justify-content:space-between;align-items:center;min-height:86px;gap:18px}
+.brand{display:flex;gap:13px;align-items:center}.mark{display:grid;place-items:center;height:45px;width:45px;border:1px solid #738c96;border-radius:13px;color:#e2bf96;font-family:serif;font-size:28px}.brand strong{font-size:1.12rem;letter-spacing:.06em}.brand small{display:block;color:#c5d1d5;font-size:.75rem;margin-top:-2px}.head-actions{display:flex;gap:8px;align-items:center}.top button{border:1px solid #718a95;background:transparent;color:#fff;border-radius:8px;padding:6px 10px;font-size:.87rem}
+main{min-height:68vh;padding:32px 0 70px} .hero{padding:25px 0 12px}.eyebrow{letter-spacing:.2em;font-size:.77rem;color:var(--accent);font-weight:700;text-transform:uppercase}.hero h1{font-family:Georgia,"Songti SC","STSong",serif;font-size:clamp(2rem,4.3vw,3.3rem);font-weight:600;line-height:1.23;letter-spacing:.035em;margin:15px 0 18px;color:var(--navy)}
+.lead{font-size:1.07rem;color:#52636b;max-width:750px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 6px 23px #17343c08}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.feature{padding:17px;border:1px solid var(--line);border-radius:12px;background:#fdfdfb}.feature b{display:block;color:var(--navy);margin-bottom:3px}.feature span{font-size:.92rem;color:var(--muted)}
+.section-label{font-size:.78rem;color:var(--accent);font-weight:700;letter-spacing:.1em}.space{height:18px}.small{font-size:.87rem;color:var(--muted)}.tiny{font-size:.76rem;color:var(--muted)}.note{background:var(--tint);border-left:3px solid #bf9868;padding:15px 17px;border-radius:0 10px 10px 0;margin:19px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;padding:11px 17px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);font-weight:650;min-height:45px}.btn.primary{color:#fff;background:var(--navy);border-color:var(--navy)}.btn.secondary{background:#f4eee6;border-color:#ead9c5;color:#734b2e}.btn.ghost{background:transparent}.btn:hover:not(:disabled){filter:brightness(.97)} .actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:22px}
+.modecard{border:2px solid var(--line);border-radius:13px;padding:18px;cursor:pointer;display:block;position:relative}.modecard:has(input:checked){border-color:#b5845d;background:#fff9f0}.modecard input{accent-color:var(--accent);width:18px;height:18px;vertical-align:middle;margin:0 6px 0 0}.modecard strong{font-size:1.08rem}.modecard small{display:block;color:var(--muted);padding-left:27px;margin-top:6px}
+.progressline{height:7px;border-radius:99px;background:#e2e7e4;overflow:hidden;margin-top:13px}.progressline>span{display:block;background:var(--positive);height:100%;width:0;transition:width .2s}.flexbetween{display:flex;align-items:center;justify-content:space-between;gap:10px}.question-h{display:flex;align-items:center;gap:8px;margin-bottom:11px}.pill{padding:3px 10px;border-radius:99px;background:#f1eee8;color:#82614a;font-size:.74rem;font-weight:700}.scenario{font-size:1.1rem;color:#2c3b41;line-height:1.88;margin:15px 0}.ask{color:var(--navy);font-weight:700;margin-bottom:10px}.stage-h{font-family:Georgia,"Songti SC","STSong",serif;font-size:1.65rem;line-height:1.35;color:var(--navy);margin:10px 0 17px}
+fieldset{border:0;margin:19px 0 4px;padding:0;min-width:0} legend{display:block;width:100%;font-weight:720;margin:0 0 10px;color:var(--navy)}.radio-options{display:grid;gap:9px}.radio-item{display:flex;gap:11px;align-items:flex-start;border:1px solid var(--line);background:#fff;border-radius:11px;padding:12px 13px;cursor:pointer;line-height:1.55}.radio-item:has(input:checked){border-color:#779e97;background:#f1f8f6}.radio-item input{accent-color:var(--positive);width:18px;height:18px;flex:0 0 18px;margin-top:3px}.radio-item span{flex:1}.textarea{width:100%;border:1px solid #c9d4d1;border-radius:11px;min-height:100px;resize:vertical;padding:13px 14px;background:#fff;color:var(--ink)}.textarea:focus,.radio-item:focus-within{outline:2px solid #8db7af;outline-offset:1px}.split-box{display:grid;grid-template-columns:1fr;gap:16px}.surprise{background:#edf3f0;border:1px solid #cddfd7;border-radius:14px;padding:22px;margin:15px 0}.surprise strong{color:var(--positive)}.error{margin:9px 0;color:var(--red);font-weight:650;min-height:24px}.footer{border-top:1px solid var(--line);padding:26px 0 34px;color:var(--muted);font-size:.82rem}
+.metricgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.metric{background:#fbfcfb;border:1px solid var(--line);border-radius:12px;padding:16px}.metric .score{font-size:1.7rem;line-height:1.2;font-weight:750;color:var(--navy);font-variant-numeric:tabular-nums}.bar{height:8px;border-radius:8px;overflow:hidden;background:#e6ece9;margin:10px 0}.bar>div{height:100%;background:var(--positive)}.histcase{border:1px solid var(--line);border-radius:13px;padding:16px 18px;margin:11px 0;background:white} .histcase h3{font-size:1.04rem;margin:4px 0 8px;color:var(--navy)}.histcase p{margin:7px 0}.histcase .source a{display:inline-block;margin-right:16px;font-size:.87rem;overflow-wrap:anywhere}.reportquote{white-space:pre-wrap;background:#f7f9f7;border-left:2px solid #98b7b0;padding:10px 12px;margin:6px 0;font-size:.9rem}.scorerule{font-size:.89rem;padding-left:20px}.scorerule li{margin:7px 0} details{margin-top:15px}summary{cursor:pointer;color:var(--navy);font-weight:750;padding:7px 0}.print-only{display:none}hr{border:0;border-top:1px solid var(--line);margin:27px 0}
+@media(max-width:650px){header .top{min-height:75px}.wrap{padding:0 15px}main{padding-top:16px}.card{padding:20px 16px}.grid2,.metricgrid{grid-template-columns:1fr}.head-actions{gap:5px}.top button{padding:6px 8px}.hero h1{font-size:2.12rem}.actions .btn{flex:1}.brand strong{font-size:1rem}.stage-h{font-size:1.46rem}}
+@media print{header,.footer,.no-print,.actions,.btn,button{display:none!important}main{padding:0}.wrap{max-width:100%;padding:0}.card{box-shadow:none;border:none;padding:10px 0}.histcase{break-inside:avoid}.print-only{display:block}body{background:#fff;font-size:12px}.metricgrid{grid-template-columns:1fr 1fr}.bar{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body><header><div class="top wrap"><div class="brand"><div class="mark" aria-hidden="true">史</div><div><strong>历史透镜</strong><small>HISTORY · REASONING LAB</small></div></div><div class="head-actions"><button id="fontBtn" type="button" aria-label="切换较大字体">大字阅读</button><button id="homeBtn" type="button">首页</button></div></div></header>
+<main class="wrap" id="app" aria-live="polite"></main>
+<footer class="footer"><div class="wrap">历史透镜 · 教育练习原型 v1.0 · 免费使用 · 不设政治立场标准答案<br>数据仅保存在当前浏览器；不需要账号、无需上传个人信息。历史题目为教学改编，不等同于完整史学研究。</div></footer>
+<script>
+const QUESTIONS = [
+  {
+    "id": 1,
+    "title": "开放港口还是维护自主",
+    "theme": "开放与主权",
+    "scenario": "某地区长期与外部进行有限贸易。一个技术和军事力量更强的外部集团，希望当地扩大贸易、开放更多港口，并允许其商人在当地经营。支持者强调技术、商品与收入，反对者担心弱势地位可能带来依赖。",
+    "ask": "如果由你负责谈判，你会如何决定开放的范围？",
+    "new": "对方进一步要求：其人员发生法律纠纷时部分不受当地法院管辖；当地调整进口税率的权利也受到条约限制。",
+    "follow": "知道这些条件后，你会维持、调整还是改变决定？需要增加什么保障？",
+    "history": "日本幕末开港与1858年安政五国条约。日本扩大通商，但条约含片面的领事裁判权、关税限制等不平等条件。开放贸易和维护自主并不是同一维度的问题。",
+    "sources": [
+      {
+        "name": "日本外务省：幕末条约问答",
+        "url": "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/qa/bakumatsu_01.html"
+      },
+      {
+        "name": "日本税关：关税史",
+        "url": "https://www.customs.go.jp/english/zeikan/history_e.htm"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "只看外部力量是否先进",
+          "points": 0
+        },
+        {
+          "text": "主要看能带来多少贸易收入",
+          "points": 1
+        },
+        {
+          "text": "一起评估交易收益、谈判筹码和长期自主空间",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "外部集团对开放的积极表态",
+          "points": 0
+        },
+        {
+          "text": "开放后某个商人赚了多少钱",
+          "points": 1
+        },
+        {
+          "text": "条约文本、贸易测算及争端解决机制的实际约束",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只考虑本地管理层的声望",
+          "points": 0
+        },
+        {
+          "text": "兼顾商人和政府财政",
+          "points": 1
+        },
+        {
+          "text": "同时衡量商人、劳动者、居民及未来政策空间",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "既然出现新条件，就完全按原来的立场执行",
+          "points": 0
+        },
+        {
+          "text": "判断条约不利就立刻断绝所有往来",
+          "points": 1
+        },
+        {
+          "text": "把贸易安排与司法和税收条款分开评估，提出可核验的谈判底线",
+          "points": 2
+        }
+      ]
+    },
+    "note": "注意：第一轮不提供条约细节，避免用后来获知的信息倒推当时决策。"
+  },
+  {
+    "id": 2,
+    "title": "扶持本地企业",
+    "theme": "产业政策",
+    "scenario": "某个收入较低的经济体想发展制造业。管理者拟向少数本地企业提供贷款优惠与税收便利，同时要求企业打开外部市场。有人认为产业需要扶持才能成长，有人担心资源分配不公。",
+    "ask": "你是否愿意批准扶持计划？会设哪些条件？",
+    "new": "若干年后，一部分受扶持企业出口表现出色；另一部分长期依赖优惠，甚至出现投资浪费和关系输送。",
+    "follow": "你会保留、取消或修改扶持计划？如何区别不同企业？",
+    "history": "韩国20世纪60—70年代的出口导向与重化工业扶持政策。出口信贷和定向资金促进了部分产业成长，也造成部分投资配置问题。",
+    "sources": [
+      {
+        "name": "世界银行：韩国工业政策回顾（PDF）",
+        "url": "https://documents1.worldbank.org/curated/en/756811468272061144/pdf/multi-page.pdf"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "政府提供扶持就一定妨碍公平",
+          "points": 0
+        },
+        {
+          "text": "如果企业能赚钱就值得继续给优惠",
+          "points": 1
+        },
+        {
+          "text": "明确扶持目标、退出期限、绩效条件和公共成本",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "受益企业的宣传资料",
+          "points": 0
+        },
+        {
+          "text": "个别明星企业的销售增速",
+          "points": 1
+        },
+        {
+          "text": "获支持与未获支持企业的绩效、补贴成本及反事实比较",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看受扶持企业的利益",
+          "points": 0
+        },
+        {
+          "text": "考虑企业和纳税人的负担",
+          "points": 1
+        },
+        {
+          "text": "再考虑劳动者、潜在竞争者、消费者与地方财政",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "只要有失败案例就立刻取消一切支持",
+          "points": 0
+        },
+        {
+          "text": "只要有成功案例就保持原样",
+          "points": 1
+        },
+        {
+          "text": "依据企业绩效分层处理，公开条件并终止长期无效扶持",
+          "points": 2
+        }
+      ]
+    },
+    "note": "历史案例包含不同时期政策，不应把所有增长归因于单一扶持政策。"
+  },
+  {
+    "id": 3,
+    "title": "金融机构排队提款",
+    "theme": "紧急治理",
+    "scenario": "一地出现严重经济衰退。居民担心金融机构无钱兑付，大量排队提款。管理者拟临时停业检查，以阻止恐慌继续蔓延；反对者担心这侵害居民自由支配存款的权利。",
+    "ask": "你是否允许短期停业？需要什么限制措施？",
+    "new": "审查发现：部分机构资产基本健康，只是临时缺少现金；另有部分机构已经资不抵债。",
+    "follow": "你会如何安排重新营业，以及居民急需资金的情况？",
+    "history": "美国1933年银行休业令与紧急银行法。银行短期停业后，监管机构根据财务状况分批允许银行恢复营业。",
+    "sources": [
+      {
+        "name": "美联储历史：1933年银行休业令",
+        "url": "https://www.federalreservehistory.org/essays/bank-holiday-of-1933"
+      },
+      {
+        "name": "美联储历史：紧急银行法",
+        "url": "https://www.federalreservehistory.org/essays/emergency-banking-act-of-1933"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "停业必然是错误或必然是正确的",
+          "points": 0
+        },
+        {
+          "text": "重点考虑能不能尽快止住提款潮",
+          "points": 1
+        },
+        {
+          "text": "同时考虑信任、法律授权、停业期限及正常交易损失",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "管理者保证会解决问题的讲话",
+          "points": 0
+        },
+        {
+          "text": "某家银行门前的排队长度",
+          "points": 1
+        },
+        {
+          "text": "金融机构偿付能力、提款数据、流动性状况和替代支付渠道",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "优先保护机构经营者",
+          "points": 0
+        },
+        {
+          "text": "主要关注存款客户",
+          "points": 1
+        },
+        {
+          "text": "再纳入工资发放、商户经营、低收入家庭和整体支付系统",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "因为停业有效就让所有机构长期停业",
+          "points": 0
+        },
+        {
+          "text": "见到资不抵债机构就允许全部立即营业",
+          "points": 1
+        },
+        {
+          "text": "区分流动性与资不抵债，说明分批复业与救济标准",
+          "points": 2
+        }
+      ]
+    },
+    "note": "历史叙述不等于所有银行都成功恢复，许多银行永久关闭。"
+  },
+  {
+    "id": 4,
+    "title": "粮价上涨与公共粮仓",
+    "theme": "公共与市场",
+    "scenario": "一个农业地区经常遭遇歉收和粮价波动。地方已有公共粮仓：丰收时储粮，紧缺时投放市场，也在困难时期救济居民。支持者说它能稳定民生；反对者认为维护仓储成本高，还可能干扰交易。",
+    "ask": "你会保留这套粮仓制度吗？如何决定储量与放粮时机？",
+    "new": "审计发现，不同地方运行差异很大：部分粮仓账实相符，另一些则有粮食损耗、账目不实和运输困难。",
+    "follow": "你会废除、保留还是分地区改革？如何验证改革结果？",
+    "history": "中国清代常平仓制度与1748年前后围绕仓储、粮价的政策论辩。其功能涵盖调节粮价与灾荒救济，运行与管理能力存在差异。",
+    "sources": [
+      {
+        "name": "《Frontiers of Economics in China》：清代常平仓争论",
+        "url": "https://academic.hep.com.cn/fec/EN/10.3868/s060-011-020-0002-6"
+      },
+      {
+        "name": "R. Bin Wong：清代民用仓储体系",
+        "url": "https://www.jstor.org/content/oa_book_monograph/10.3998/mpub.19044"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "只要是公办粮仓就应该保留或废除",
+          "points": 0
+        },
+        {
+          "text": "主要看仓储本身是否盈利",
+          "points": 1
+        },
+        {
+          "text": "权衡粮价波动、饥荒风险、仓储损耗与财政可持续性",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "某位官员保证粮仓有用",
+          "points": 0
+        },
+        {
+          "text": "单年粮仓收支盈亏",
+          "points": 1
+        },
+        {
+          "text": "历年粮价、饥荒救济成效、仓储审计与运输成本",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "主要考虑管理者的工作方便",
+          "points": 0
+        },
+        {
+          "text": "同时考虑储粮农户和买粮居民",
+          "points": 1
+        },
+        {
+          "text": "关注贫困家庭、粮农、商人、纳税人与周边地区",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "既然部分粮仓出了问题就全部撤销",
+          "points": 0
+        },
+        {
+          "text": "既然部分粮仓有效就把原制度原样推广",
+          "points": 1
+        },
+        {
+          "text": "区分有效与失效地区，设置公开账目、抽查和应急机制",
+          "points": 2
+        }
+      ]
+    },
+    "note": "粮仓政策与市场制度在不同历史时期可能形成互补或冲突。"
+  },
+  {
+    "id": 5,
+    "title": "经济繁荣与污水危机",
+    "theme": "公共卫生",
+    "scenario": "某城市商业和制造业增长很快，但供水、排水和垃圾处理没有跟上。密集居住区疾病频发。有人建议由公共机构筹资建设卫生设施；有人认为增加税费会影响商业，应让各家自行解决。",
+    "ask": "你会推动统一的供水与排水项目吗？怎么筹资？",
+    "new": "进一步调查发现，卫生条件与疾病发生存在明显关联，但工程需要多年且预算紧张。",
+    "follow": "你如何同时安排紧急措施、长期工程和财政约束？",
+    "history": "英国工业化时期的城市卫生危机、Edwin Chadwick调查与1848年公共卫生法。法律建立了公共卫生行政框架，但当时的执行权力和资源也有限。",
+    "sources": [
+      {
+        "name": "英国议会：1848年公共卫生法",
+        "url": "https://www.parliament.uk/about/living-heritage/transformingsociety/towncountry/towns/tyne-and-wear-case-study/about-the-group/public-administration/the-1848-public-health-act/"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "经济增长了就不应花公共资金",
+          "points": 0
+        },
+        {
+          "text": "首先看工程会不会拖累增长",
+          "points": 1
+        },
+        {
+          "text": "衡量疾病成本、公共品性质、实施次序和财政负担",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "某家工厂对卫生状况的评价",
+          "points": 0
+        },
+        {
+          "text": "最近一周门诊人数",
+          "points": 1
+        },
+        {
+          "text": "分地区患病率、用水条件、工程造价与治理前后的比较",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看纳税大户的意见",
+          "points": 0
+        },
+        {
+          "text": "兼顾商家和居民",
+          "points": 1
+        },
+        {
+          "text": "额外考虑贫困社区、儿童、未来居住者及公共预算承担者",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "建设很贵就永久放弃",
+          "points": 0
+        },
+        {
+          "text": "有病就不计成本立即全部开工",
+          "points": 1
+        },
+        {
+          "text": "分阶段提供清洁用水并实施可负担工程，持续监测效果",
+          "points": 2
+        }
+      ]
+    },
+    "note": "不能简单把某一次公共卫生立法等同于疾病问题立即解决。"
+  },
+  {
+    "id": 6,
+    "title": "战时安全与特定居民",
+    "theme": "安全与权利",
+    "scenario": "两个政治实体发生严重战争，其中一方境内有一群居民与对方具有相同的祖籍背景。许多居民出生在本地。管理者担心可能有人协助敌对方，拟按祖籍统一迁走这些居民并限制行动。",
+    "ask": "你是否批准按祖籍大规模迁移？如果不批准，有什么替代办法？",
+    "new": "后续安全调查未发现足以证明这一整个人群构成威胁的证据，但现实的战时安全压力仍存在。",
+    "follow": "在维护安全与尊重权利之间，你会采取什么可审查措施？",
+    "history": "美国1942年行政命令9066之后的日裔美国人强制迁移与拘禁。战时安全主张造成广泛的公民权利侵害，不能仅凭祖籍推断个体危险。",
+    "sources": [
+      {
+        "name": "美国国家档案馆：9066号行政命令",
+        "url": "https://www.archives.gov/milestone-documents/executive-order-9066"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "祖籍相同本身就足以证明威胁",
+          "points": 0
+        },
+        {
+          "text": "只要有战争就不必考虑权利保障",
+          "points": 1
+        },
+        {
+          "text": "基于可验证的个人行为、比例原则及法定程序确定限制范围",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "对整个群体的传言",
+          "points": 0
+        },
+        {
+          "text": "几起未经核查的个案",
+          "points": 1
+        },
+        {
+          "text": "可审查的个体证据、风险评估与独立申诉机制",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看军事主管部门是否方便",
+          "points": 0
+        },
+        {
+          "text": "考虑安全部门及被限制者",
+          "points": 1
+        },
+        {
+          "text": "同时考虑所有居民安全、无辜者权利及长期社会信任",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "因为有战事便继续无限制群体迁移",
+          "points": 0
+        },
+        {
+          "text": "证据不足便立即撤掉一切安全措施",
+          "points": 1
+        },
+        {
+          "text": "停止基于群体身份的限制，按具体行为调查并设置申诉和纠错",
+          "points": 2
+        }
+      ]
+    },
+    "note": "在这类情境下，证据不足时反对集体惩罚可以是明确且有根据的道德判断，并非必须“各打五十大板”。"
+  },
+  {
+    "id": 7,
+    "title": "农民春耕贷款",
+    "theme": "财政与民生",
+    "scenario": "农业地区不少家庭春季缺少种子和生活资金，只能向私人借高息贷款。管理者准备建立公共低息贷款制度，在收获后偿还，并希望借此稳定生产和增加财政收入。",
+    "ask": "如果你负责实施，你会如何确定贷款对象、利率与偿还方式？",
+    "new": "执行一段时间后，部分基层机构为了完成放贷数量指标，向并不需要贷款的人推销贷款；一些困难家庭发生逾期。",
+    "follow": "面对政策目标与基层执行之间的偏差，你会如何改革？",
+    "history": "中国北宋王安石青苗法。原本意在扶持农业生产并改善财政状况，史料与研究同时讨论了借贷制度的理论依据及强制摊派等执行风险。",
+    "sources": [
+      {
+        "name": "哥伦比亚大学东亚教育：王安石青苗法史料",
+        "url": "https://afe.easia.columbia.edu/main_pop/ps/ps_china-wang-anshi-crop-loans.htm"
+      },
+      {
+        "name": "北京大学学术库：熙宁青苗借贷研究",
+        "url": "https://ir.pku.edu.cn/handle/20.500.11897/479251"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "公共借贷必然比私人借贷更好或更坏",
+          "points": 0
+        },
+        {
+          "text": "最关心放贷总量能否提高",
+          "points": 1
+        },
+        {
+          "text": "关注自愿、偿还能力、违约风险与当地执行激励",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "上级给出的放贷目标",
+          "points": 0
+        },
+        {
+          "text": "某一户成功借款的故事",
+          "points": 1
+        },
+        {
+          "text": "借款户需求、利率、逾期率及是否存在行政摊派的记录",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "优先考虑财政收入",
+          "points": 0
+        },
+        {
+          "text": "关注农户和官府收支",
+          "points": 1
+        },
+        {
+          "text": "进一步考虑贫困与富裕农户、私人信贷者及基层执行者",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "为完成任务继续强推",
+          "points": 0
+        },
+        {
+          "text": "见到违约就停止所有信贷",
+          "points": 1
+        },
+        {
+          "text": "取消摊派指标，核验自愿申请，并按需求与能力设计援助",
+          "points": 2
+        }
+      ]
+    },
+    "note": "青苗法的利弊争论不只涉及经济效果，也涉及政治与经学解释。"
+  },
+  {
+    "id": 8,
+    "title": "统一各地的标准",
+    "theme": "统一与地方",
+    "scenario": "长期冲突后，几个相邻地区由同一个中央机构治理。各地的计量工具、钱币和公文写法不一致，跨区交易和管理都不方便。管理者想制定统一标准，但推广需要经费和大量行政协调。",
+    "ask": "你是否支持统一标准？如何处理地方差异？",
+    "new": "试点显示，统一计量有利于贸易和税务核算，但部分地区要更换大量工具；同时有人提议借统一标准之名，进一步压缩一切地方自主做法。",
+    "follow": "你会把标准化推到什么范围？如何处理额外集中权力的提议？",
+    "history": "秦统一后实行文字、货币、度量衡等标准化。秦代标准量器有实物存世；技术与交易标准的统一不应被简单等同于一切权力都要集中。",
+    "sources": [
+      {
+        "name": "中国国家博物馆：秦始皇秦二世双诏版",
+        "url": "https://www.chnmuseum.cn/zp/zpml/csp/202008/t20200826_247416.shtml"
+      },
+      {
+        "name": "美国大都会艺术博物馆：秦代概述",
+        "url": "https://www.metmuseum.org/zh/essays/qin-dynasty-221-206-b-c"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "只要统一就一定更有效率",
+          "points": 0
+        },
+        {
+          "text": "关注文书和交易是否更方便",
+          "points": 1
+        },
+        {
+          "text": "区分必需的技术标准与不必统一的地方事务",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "中央部门说统一能够强国",
+          "points": 0
+        },
+        {
+          "text": "某一家商户的交易经历",
+          "points": 1
+        },
+        {
+          "text": "跨区成本、替换成本、标准误差与地方适应性资料",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看中央管理成本",
+          "points": 0
+        },
+        {
+          "text": "兼顾官员与商户",
+          "points": 1
+        },
+        {
+          "text": "还考虑基层生产者、小商户和偏远地区居民的负担",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "技术标准有效便接受所有集权要求",
+          "points": 0
+        },
+        {
+          "text": "看到迁移成本就撤销全部统一",
+          "points": 1
+        },
+        {
+          "text": "保留有效标准，分期补贴换装，另审权力集中是否必要",
+          "points": 2
+        }
+      ]
+    },
+    "note": "此题区分公共技术协调与治理权力集中，避免把两者混成一个问题。"
+  },
+  {
+    "id": 9,
+    "title": "沿海贸易与海盗",
+    "theme": "边境与贸易",
+    "scenario": "某地沿海贸易发达，但沿岸海盗与走私活动也十分频繁。管理者准备严格限制私人海上贸易，允许的对外交易须通过少数官方通道。有人认为能改善安全，有人担心正规商路被迫转入地下。",
+    "ask": "你会采取全面限制还是分级管理？",
+    "new": "后续发现，若干沿海地区的非法交易与袭扰并未减少；部分地区贸易需求越大，黑市活动反而越活跃。",
+    "follow": "你会怎样区分真正的安全威胁与正常贸易需求？",
+    "history": "明代海禁及16世纪沿海走私、倭寇和合法贸易的复杂关系。研究发现，严厉贸易限制与部分地区海盗袭扰增加有关，但具体因果仍需考虑治安及跨国网络。",
+    "sources": [
+      {
+        "name": "剑桥大学期刊：明代海禁、人口贩运与海盗",
+        "url": "https://doi.org/10.1017/S0010417523000270"
+      },
+      {
+        "name": "《经济史杂志》：明代海禁与海盗",
+        "url": "https://www.cambridge.org/core/journals/journal-of-economic-history/article/abs/autarky-and-the-rise-and-fall-of-piracy-in-ming-china/DFA290E2C6550AF9F29E24039B3314AC"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "海盗存在就证明贸易本身有害",
+          "points": 0
+        },
+        {
+          "text": "只看限制能否减少出海船只",
+          "points": 1
+        },
+        {
+          "text": "区分犯罪活动、合法贸易渠道与执法激励",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "沿海官员称赞禁令的公文",
+          "points": 0
+        },
+        {
+          "text": "一年里查获了多少船只",
+          "points": 1
+        },
+        {
+          "text": "袭扰案件、合法贸易量、走私收益与执法成本的地区比较",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看负责边防的机构",
+          "points": 0
+        },
+        {
+          "text": "兼顾政府和商人",
+          "points": 1
+        },
+        {
+          "text": "还考虑渔民、港口居民、合法经营者和海上受害者",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "走私没减少就宣布一切管制无用",
+          "points": 0
+        },
+        {
+          "text": "为加强威慑继续无限加码",
+          "points": 1
+        },
+        {
+          "text": "开放可监管通道、精准打击暴力行为并观察是否降低走私诱因",
+          "points": 2
+        }
+      ]
+    },
+    "note": "海禁并非各个时期都执行一致，“禁止”和“开放”都不是固定不变的历史状态。"
+  },
+  {
+    "id": 10,
+    "title": "便宜粮食与本地农业",
+    "theme": "保护与贸易",
+    "scenario": "某工业化地区对外来粮食征收高额税费，以保护本地种粮者。但城市居民长期抱怨面包价格高。管理者考虑取消关税，使人们有机会购买便宜粮食；一些农户担心收入下降。",
+    "ask": "你是否支持取消粮食进口关税？怎样考虑过渡成本？",
+    "new": "另一片严重歉收的地区出现饥荒。降低进口关税并不自动解决当地贫困、运输和土地租佃问题。",
+    "follow": "你如何把长期贸易政策与眼前的饥荒救济区分开来？",
+    "history": "英国1846年废除《谷物法》，其争论与爱尔兰大饥荒时期的政策互有关联；取消谷物关税并未自动解决饥荒。",
+    "sources": [
+      {
+        "name": "英国国家档案馆：谷物法教学资料",
+        "url": "https://www.nationalarchives.gov.uk/education/resources/the-corn-laws/"
+      },
+      {
+        "name": "英国议会：爱尔兰大饥荒",
+        "url": "https://www.parliament.uk/about/living-heritage/evolutionofparliament/legislativescrutiny/parliamentandireland/overview/the-great-famine/"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "进口商品便宜就必然对所有人有利",
+          "points": 0
+        },
+        {
+          "text": "优先估算城市粮价能降多少",
+          "points": 1
+        },
+        {
+          "text": "同时考虑消费者、生产者与不同地区的转型和救济需求",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "倡议者关于自由贸易的口号",
+          "points": 0
+        },
+        {
+          "text": "一座城市的零售价变动",
+          "points": 1
+        },
+        {
+          "text": "进口规模、工资、粮价、农户收入和贫困家庭可获得食物的情况",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看城市商人",
+          "points": 0
+        },
+        {
+          "text": "兼顾城市消费者和本地农户",
+          "points": 1
+        },
+        {
+          "text": "再考虑贫困地区、佃农、运输商与纳税居民",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "既然饥荒仍在就说明减税必然无效",
+          "points": 0
+        },
+        {
+          "text": "既然关税下降就认为救济工作已经完成",
+          "points": 1
+        },
+        {
+          "text": "将贸易规则调整与紧急口粮援助、就业救助分开实施和检验",
+          "points": 2
+        }
+      ]
+    },
+    "note": "应避免将英国谷物法的废除等同于解决爱尔兰饥荒的充分条件。"
+  },
+  {
+    "id": 11,
+    "title": "向战后邻国提供援助",
+    "theme": "援助与利益",
+    "scenario": "一场大型战争后，邻近地区城市与工业遭到严重破坏。经济较强的一方提出提供资金、设备和食品，帮助对方恢复生产与贸易。有人强调人道义务，有人担心援助有政治交换条件。",
+    "ask": "你会接受或提供这种援助吗？需要怎样的公开安排？",
+    "new": "进一步发现，援助方除了希望灾区恢复，也希望扩大自己的商品市场、加强政治伙伴关系；而受援地区确实急需物资。",
+    "follow": "当援助方既有公共目标也有自身利益时，你怎样判断援助是否值得？",
+    "history": "美国1948年马歇尔计划（欧洲复兴计划）。援助推动战后恢复，同时也与援助方的市场和地缘政治利益相关。",
+    "sources": [
+      {
+        "name": "美国国家档案馆：马歇尔计划",
+        "url": "https://www.archives.gov/milestone-documents/marshall-plan"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "只按援助方属于哪一阵营判断",
+          "points": 0
+        },
+        {
+          "text": "重点看援助资金是否足够大",
+          "points": 1
+        },
+        {
+          "text": "比较援助条件、执行透明度、长期依赖风险与重建成效",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "援助方的政治演讲",
+          "points": 0
+        },
+        {
+          "text": "援助额的绝对数字",
+          "points": 1
+        },
+        {
+          "text": "资金用途、受援项目结果、约束条款和当地共同决策机制",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看援助方的战略利益",
+          "points": 0
+        },
+        {
+          "text": "同时看援助方和受援政府",
+          "points": 1
+        },
+        {
+          "text": "进一步考虑受灾居民、中小企业、纳税人及区域关系",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "发现援助方有私利就认定所有援助无效",
+          "points": 0
+        },
+        {
+          "text": "因为短期救急就不再检视附加条件",
+          "points": 1
+        },
+        {
+          "text": "将实际救助效果与政治条件分开评估，保留退出与监督机制",
+          "points": 2
+        }
+      ]
+    },
+    "note": "历史中人道、经济与地缘政治动机可以并存。"
+  },
+  {
+    "id": 12,
+    "title": "大型企业与市场竞争",
+    "theme": "垄断与创新",
+    "scenario": "一家企业以很高的效率和庞大的销售网络提供日常必需品，商品供应稳定。但它也不断收购竞争对手，并通过某些交易安排让小企业难以进入市场。管理者考虑限制它的市场力量。",
+    "ask": "你支持对这家企业开展调查甚至要求拆分吗？什么证据足够？",
+    "new": "调查发现，企业的规模优势确实降低了部分成本，但一些排他性合同与并购行为严重妨碍竞争。",
+    "follow": "你会如何既保护效率，也纠正不正当竞争？",
+    "history": "美国标准石油公司反垄断案。1911年美国最高法院认定其对贸易构成不合理限制并要求拆分；争议不是“大企业都应被惩罚”。",
+    "sources": [
+      {
+        "name": "美国国会图书馆：标准石油与垄断",
+        "url": "https://guides.loc.gov/chronicling-america-standard-oil-monopoly/introduction"
+      },
+      {
+        "name": "美国最高法院判例全文",
+        "url": "https://supreme.justia.com/cases/federal/us/221/1/"
+      }
+    ],
+    "options": {
+      "tradeoff": [
+        {
+          "text": "只要企业很大就该拆分或绝不能拆分",
+          "points": 0
+        },
+        {
+          "text": "最关心当前商品价格",
+          "points": 1
+        },
+        {
+          "text": "综合评估进入壁垒、排他行为、消费者福利和创新动力",
+          "points": 2
+        }
+      ],
+      "evidence": [
+        {
+          "text": "支持或反对大企业的名人观点",
+          "points": 0
+        },
+        {
+          "text": "一家小企业遭遇的合同问题",
+          "points": 1
+        },
+        {
+          "text": "市场份额变化、价格与质量趋势、排他合同及进入门槛的实证材料",
+          "points": 2
+        }
+      ],
+      "stakeholders": [
+        {
+          "text": "只看大企业股东",
+          "points": 0
+        },
+        {
+          "text": "考虑股东和消费者",
+          "points": 1
+        },
+        {
+          "text": "再兼顾员工、潜在进入者、供应商以及长期竞争",
+          "points": 2
+        }
+      ],
+      "revision": [
+        {
+          "text": "既然有规模效率就放过全部行为",
+          "points": 0
+        },
+        {
+          "text": "既然有限制竞争行为就惩罚所有大企业",
+          "points": 1
+        },
+        {
+          "text": "聚焦经证实的不正当行为，匹配可执行且相称的补救措施",
+          "points": 2
+        }
+      ]
+    },
+    "note": "1911年判决属于特定时期的美国法律制度，不应简化为普遍适用的拆分标准。"
+  }
+];
+const K='history-lens-v1-local-progress';
+const AXES=[['tradeoff','方案与取舍'],['evidence','证据选择'],['stakeholders','相关方视角'],['revision','新证据处理']];
+const STANCES=['倾向支持','倾向反对','有条件支持或调整','暂不判断，需要更多信息'];
+const CHANGES=['维持原先判断','小幅修改方案','明显改变原先立场','暂缓决定，继续调查'];
+const SIX=[1,2,3,4,5,6];
+let s=load()||{mode:'intro',selected:SIX,index:0,stage:1,answers:{},large:false};
+let setupLength=s.selected.length===12?12:6;
+function load(){try{let x=JSON.parse(localStorage.getItem(K));if(!x||!Array.isArray(x.selected)||!x.answers||!['intro','question','results'].includes(x.mode))return null; x.selected=x.selected.filter(id=>QUESTIONS.some(q=>q.id===id));if(!x.selected.length)x.selected=SIX; x.index=Math.max(0,Math.min(x.index||0,x.selected.length-1));x.stage=x.stage===2?2:1;return x}catch(e){return null}}
+function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}
+function esc(t){return String(t??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function $(id){return document.getElementById(id)}
+function getQ(){return QUESTIONS.find(q=>q.id===s.selected[s.index])}
+function ans(id){return s.answers[id]||(s.answers[id]={})}
+function cOpts(q,axis){let a=q.options[axis];let shift=(q.id+AXES.findIndex(x=>x[0]===axis)*2)%a.length;return a.slice(shift).concat(a.slice(0,shift))}
+function setField(k,value){ans(getQ().id)[k]=value;save()}
+function commonHero(title,sub){return `<div class="hero"><div class="eyebrow">HISTORY REASONING LAB</div><h1>${title}</h1><p class="lead">${sub}</p></div>`}
+function render(){document.body.classList.toggle('large',!!s.large);$('fontBtn').textContent=s.large?'标准字号':'大字阅读';if(s.mode==='intro')intro();else if(s.mode==='question')question();else report();document.querySelector('main').scrollIntoView({behavior:'instant',block:'start'});}
+function intro(){let hasPrev=Object.keys(s.answers).length>0; $('app').innerHTML=`${commonHero('不先问立场，<br>先看判断方法。','用匿名历史情境，练习如何分析问题、权衡利益与处理新证据。先答题，再揭示历史原型。')}<div class="grid2"><div class="feature"><b>① 匿名作答</b><span>隐藏国家、时代和人物，减少先入为主的联想。</span></div><div class="feature"><b>② 新证据冲击</b><span>加入额外事实，观察判断标准是否一贯。</span></div><div class="feature"><b>③ 结果反馈</b><span>查看四项结构化选择表现，不评判政治立场。</span></div><div class="feature"><b>④ 历史揭晓</b><span>答完后才开放史料来源与教师讨论提示。</span></div></div><div class="space"></div><div class="card"><div class="section-label">选择练习长度</div><h2 style="margin:5px 0 15px;color:var(--navy)">开始一场没有标签的历史讨论</h2><div class="grid2"><label class="modecard"><input type="radio" name="len" value="6" ${setupLength===6?'checked':''}><strong>基础版 · 6题</strong><small>约20—30分钟，适合首次体验</small></label><label class="modecard"><input type="radio" name="len" value="12" ${setupLength===12?'checked':''}><strong>完整试用版 · 12题</strong><small>约35—55分钟，覆盖更多历史议题</small></label></div><div class="note"><b>使用须知</b>：这是一套未经过心理测量学验证的教育练习，不是政治倾向测试、人格诊断或智力测验。选项主要反映答题时所选择的分析路径，开放题不会被机器准确评分。结果不应用于给学生或长辈贴标签。</div><p class="small">建议先独立回答开放题，再做结构化选择。中途关闭也会自动保存在本机浏览器。没有账号和后台，不收集个人身份信息。</p><div class="actions"><button class="btn primary" id="startBtn">开始全新练习 →</button>${hasPrev?'<button class="btn secondary" id="resumeBtn">继续上次练习</button>':''}<button class="btn ghost" id="howBtn">查看评分原则</button></div></div><div id="introRubric" style="display:none;margin-top:16px" class="card"><h3>评分逻辑：不是政治态度打分</h3><p>每道题的四项结构化选择，分别反映方案与取舍、证据选择、相关方视角和新证据处理。每项选择在本教学原型中记0、1或2点，分数仅表示<strong>选项覆盖了多少可检验的分析要素</strong>。</p><p>开放文字需要教师或家人结合理由人工评阅；坚持原判断、修改原判断、同意或反对任何政策本身均不加减分。分数未做常模校准，不能证明偏见深浅。</p></div>`;
+ document.querySelectorAll('input[name="len"]').forEach(el=>el.onchange=()=>{setupLength=+el.value});
+ $('startBtn').onclick=()=>{if(Object.keys(s.answers).length && !confirm('开始新练习将覆盖本机已有答题进度，确定继续吗？'))return;s={mode:'question',selected:setupLength===12?QUESTIONS.map(q=>q.id):SIX,index:0,stage:1,answers:{},large:s.large};save();render()};
+ if($('resumeBtn'))$('resumeBtn').onclick=()=>{s.mode=s.selected.every(id=>isComplete(s.answers[id])||s.answers[id]?.skipped)?'results':'question';save();render()};
+ $('howBtn').onclick=()=>{const box=$('introRubric');box.style.display=box.style.display==='none'?'block':'none'};
+}
+function optionField(name,opts,value){return `<fieldset><legend>${name.label}</legend><div class="radio-options">${opts.map((o,i)=>`<label class="radio-item"><input type="radio" name="${esc(name.key)}" value="${esc(o.value??i)}" ${String(value??'')===String(o.value??i)?'checked':''}><span>${esc(o.text)}</span></label>`).join('')}</div></fieldset>`}
+function question(){let q=getQ(),a=ans(q.id),i=s.index+1;let done=s.selected.filter(id=>isComplete(s.answers[id])).length;
+ let head=`<div class="flexbetween"><span class="section-label">${s.stage===1?'阶段一 / 匿名情境':'阶段二 / 新证据'}</span><span class="small">第 ${i} / ${s.selected.length} 题</span></div><div class="progressline" role="progressbar" aria-label="答题进度" aria-valuenow="${done}" aria-valuemax="${s.selected.length}"><span style="width:${(i-1+(s.stage===2?.6:.1))/s.selected.length*100}%"></span></div>`;
+ let inner='';
+ if(s.stage===1){inner=`<div class="question-h"><span class="pill">情境 ${String(i).padStart(2,'0')}</span><span class="pill">${esc(q.theme)}</span></div><h2 class="stage-h">${esc(q.title)}</h2><p class="scenario">${esc(q.scenario)}</p><div class="note"><b>决策问题：</b>${esc(q.ask)}</div>${optionField({key:'stance',label:'1. 你目前的初步判断是？（不计分）'},STANCES.map((t,i)=>({text:t,value:i})),a.stance)}<fieldset><legend>2. 请先用自己的话写下判断依据（可选）</legend><textarea class="textarea" id="reasonText" placeholder="例如：我为什么这样判断？什么情况下会改变主意？">${esc(a.reasonText||'')}</textarea></fieldset>${AXES.slice(0,3).map(([axis,name],idx)=>optionField({key:axis,label:`${idx+3}. ${name}：选择最接近你会采用的思路`},cOpts(q,axis).map(o=>({text:o.text,value:o.points})),a[axis])).join('')}<p class="small">以上选项不是“同意/反对”的正确答案，只是描述不同的思考依据。</p>`;
+ }else{inner=`<div class="question-h"><span class="pill">新信息</span><span class="pill">${esc(q.theme)}</span></div><h2 class="stage-h">情况有了变化</h2><p class="small">你先前的判断：${esc(STANCES[a.stance]||'未作答')}</p><div class="surprise"><strong>刚刚获得的新证据</strong><p class="scenario" style="margin-bottom:0">${esc(q.new)}</p></div><div class="note"><b>追问：</b>${esc(q.follow)}</div>${optionField({key:'change',label:'1. 你的初步立场将怎样变化？（不计分）'},CHANGES.map((t,i)=>({text:t,value:i})),a.change)}<fieldset><legend>2. 请先解释为什么这样处理新证据（可选）</legend><textarea class="textarea" id="revisionText" placeholder="新信息支持了哪些推论？又推翻了哪些推论？">${esc(a.revisionText||'')}</textarea></fieldset>${optionField({key:'revision',label:'3. 你准备怎样回应新证据？'},cOpts(q,'revision').map(o=>({text:o.text,value:o.points})),a.revision)}<p class="small">保持或改变原立场本身不计分；只有你选择的推理方式参与结构化反馈。</p>`}
+ $('app').innerHTML=`<div class="card">${head}<div class="space"></div>${inner}<div class="error" id="err" role="alert"></div><div class="actions no-print"><button class="btn" id="backBtn">← 上一步</button><button class="btn primary" id="nextBtn">${s.stage===1?'进入新证据 →':i===s.selected.length?'完成并查看报告 →':'下一道历史情境 →'}</button><button class="btn ghost" id="skipBtn">跳过本题</button></div><p class="tiny" style="margin-top:19px">答题自动保存在本设备浏览器。历史背景会在全部题目结束后展示。</p></div>`;
+ ['stance','tradeoff','evidence','stakeholders','change','revision'].forEach(k=>document.querySelectorAll(`input[name="${k}"]`).forEach(el=>el.addEventListener('change',()=>setField(k,+el.value))));
+ [['reasonText','reasonText'],['revisionText','revisionText']].forEach(([id,key])=>{let el=$(id);if(el)el.addEventListener('input',()=>setField(key,el.value))});
+ $('backBtn').onclick=()=>{if(s.stage===2){s.stage=1}else if(s.index>0){s.index--;s.stage=2}else{s.mode='intro'}save();render()};
+ $('nextBtn').onclick=()=>{if(s.stage===1){if(['stance','tradeoff','evidence','stakeholders'].some(k=>ans(q.id)[k]===undefined)){$('err').textContent='请选择初步判断及三项分析依据，再继续。';return}s.stage=2}else{if(['change','revision'].some(k=>ans(q.id)[k]===undefined)){$('err').textContent='请选择立场变化与新证据处理方式，再继续。';return}a.skipped=false;if(s.index===s.selected.length-1){s.mode='results'}else{s.index++;s.stage=1}}save();render()};
+ $('skipBtn').onclick=()=>{if(!confirm('跳过本题将不计入结果。你仍可返回补答。'))return;a.skipped=true;if(s.index===s.selected.length-1){s.mode='results'}else{s.index++;s.stage=1}save();render()};
+}
+function isComplete(a){return !!a&&!a.skipped&&['stance','tradeoff','evidence','stakeholders','change','revision'].every(k=>Number.isInteger(a[k]))}
+function calc(){let completed=s.selected.filter(id=>isComplete(s.answers[id])),met={};AXES.forEach(([k,name])=>met[k]={name,sum:completed.reduce((t,id)=>t+(s.answers[id][k]??0),0),max:completed.length*2});return {completed,met}}
+function report(){let r=calc(),total=r.completed.length,score=Object.values(r.met).reduce((v,m)=>v+m.sum,0),max=total*8;let changes={};CHANGES.forEach((name,i)=>changes[i]=r.completed.filter(id=>s.answers[id].change===i).length);
+ const rows=AXES.map(([k,name])=>{let m=r.met[k],pct=m.max?Math.round(m.sum/m.max*100):0;return `<div class="metric"><div class="small">${esc(name)}</div><div class="score">${m.sum} <span class="small">/ ${m.max}</span></div><div class="bar"><div style="width:${pct}%"></div></div><div class="tiny">${pct}% · 结构化选项覆盖度</div></div>`}).join('');
+ $('app').innerHTML=`${commonHero('判断的质量，<br>不由立场决定。','以下反馈反映你在结构化题目中选择了哪些分析依据，而非测量人格、思想正确性或真实的逻辑能力。')}<div class="card"><div class="flexbetween"><span class="section-label">练习完成 · 试用版</span><span class="pill">${total} / ${s.selected.length} 题已完成</span></div><h2 style="margin:12px 0;color:var(--navy)">你的思考路径概览</h2><div class="metricgrid">${rows}</div><div class="note"><b>综合覆盖：${score} / ${max} 点。</b> 这些点数来自预设选项，不是客观能力值；高分也可能只是更容易识别选项中的“理想表达”。不应据此判断某个人是否具有二元思维、是否有偏见或政治态度是否正确。</div><p><b>面对新信息的动作：</b>${CHANGES.map((t,i)=>`${esc(t)} ${changes[i]} 次`).join(' · ')}。</p><p class="small">保持原观点不等于顽固，改变观点不等于理性。需要回看开放文字，确认每次是否有相关证据支持。</p><div class="actions no-print"><button class="btn primary" id="exportBtn">导出答题记录（JSON）</button><button class="btn" id="copyBtn">复制简短反馈</button><button class="btn" id="printBtn">打印 / 保存 PDF</button></div></div><div class="space"></div><div class="card"><div class="section-label">全部作答结束 · 现在揭晓</div><h2 style="color:var(--navy);margin-top:7px">真实历史原型与追问</h2><p class="small">下列历史内容来自公开资料。题干出于教学目的进行匿名化、简化与情境改写，不能替代原始史料或完整历史解释。</p><div id="historyList">${s.selected.map(id=>historyPanel(QUESTIONS.find(q=>q.id===id),s.answers[id])).join('')}</div><div class="space"></div><details><summary>教师 / 家庭讨论：人工评价开放回答的办法</summary><ol class="scorerule"><li><b>证据意识：</b>能否区分题干事实、预测与需要核实的信息？</li><li><b>因果与约束：</b>能否指出措施的作用机制和实施前提，而非仅看口号？</li><li><b>多方利益：</b>能否说清谁受益、谁承担成本，权利边界在哪里？</li><li><b>反证处理：</b>新证据出现后，能否说明什么需要更新、什么仍有依据？</li></ol><p class="small">人工评阅可用0分=未涉及，1分=部分涉及，2分=有明确理由和具体证据，每题最多8分。请对不同政治立场使用一致标准；可邀请两名评价者独立判断、比较差异。</p></details></div><div class="actions no-print"><button class="btn" id="editBtn">返回检查答题</button><button class="btn secondary" id="restartBtn">开始新练习</button><button class="btn ghost" id="urlBtn">分享这个网页地址</button></div><p class="small no-print">提示：如果当前地址以 file:// 开头，只能在本机打开。上传到 GitHub Pages 等免费静态托管后，才会获得其他人可以访问的 https:// 链接。</p>`;
+ $('exportBtn').onclick=exportJSON;$('copyBtn').onclick=()=>copyText(`历史透镜·教育练习报告\n已完成${total}/${s.selected.length}题；结构化选择覆盖${score}/${max}点。\n${Object.values(r.met).map(m=>m.name+': '+m.sum+'/'+m.max).join('；')}\n提示：仅为练习性反馈，不能据此判断政治倾向或认知水平。`);
+ $('printBtn').onclick=()=>window.print();$('editBtn').onclick=()=>{s.mode='question';s.index=0;s.stage=1;save();render()};
+ $('restartBtn').onclick=()=>{if(!confirm('重新开始将覆盖本机答题记录。是否继续？'))return;s.mode='intro';s.answers={};s.index=0;s.stage=1;save();render()};
+ $('urlBtn').onclick=()=>{if(location.protocol==='file:'){alert('这是本地文件，还不是可分享的公网地址。请按附带的 GitHub Pages 发布指南操作，发布后再复制网页网址。');return}copyText(location.href)};
+}
+function historyPanel(q,a){const complete=isComplete(a);return `<article class="histcase"><div class="flexbetween"><span class="pill">第${q.id}题 · ${esc(q.theme)}</span><span class="small">${complete?'已答':'跳过'}</span></div><h3>${esc(q.title)} — 历史揭晓</h3><p>${esc(q.history)}</p><p class="small"><b>历史阅读提醒：</b>${esc(q.note)}</p><p class="source">${q.sources.map((src,i)=>`<a href="${esc(src.url)}" target="_blank" rel="noopener noreferrer">史料 ${i+1}：${esc(src.name)} ↗</a>`).join('')}</p>${complete?`<details><summary>展开查看自己的回答</summary><p class="small">初步判断：${esc(STANCES[a.stance])}；新信息后的判断：${esc(CHANGES[a.change])}</p>${a.reasonText?`<div class="reportquote">${esc(a.reasonText)}</div>`:''}${a.revisionText?`<div class="reportquote">${esc(a.revisionText)}</div>`:''}</details>`:''}</article>`}
+function exportJSON(){let blob=new Blob([JSON.stringify({type:'history-lens-exercise',version:'1.0',exportedAt:new Date().toISOString(),notice:'结构化选择不等于心理或政治倾向诊断',questions:s.selected.map(id=>{let q=QUESTIONS.find(q=>q.id===id);return {id,title:q.title,theme:q.theme,history:q.history,answer:s.answers[id]||null}}),summary:calc()},null,2)],{type:'application/json;charset=utf-8'});let url=URL.createObjectURL(blob);let el=document.createElement('a');el.href=url;el.download='历史透镜-答题记录-'+new Date().toISOString().slice(0,10)+'.json';document.body.appendChild(el);el.click();el.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+async function copyText(t){try{await navigator.clipboard.writeText(t);alert('内容已复制。')}catch(e){let x=document.createElement('textarea');x.value=t;x.style.position='fixed';x.style.left='-999px';document.body.appendChild(x);x.select();let ok=document.execCommand('copy');x.remove();alert(ok?'内容已复制。':'复制失败，请手动选择页面内容。')}}
+$('fontBtn').onclick=()=>{s.large=!s.large;save();document.body.classList.toggle('large',s.large);$('fontBtn').textContent=s.large?'标准字号':'大字阅读'};
+$('homeBtn').onclick=()=>{s.mode='intro';save();render()};
+render();
+</script>
+</body></html>
